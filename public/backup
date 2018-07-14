@@ -1,0 +1,46 @@
+main.html
+div를 ul로 바꾸기 전
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <script src="./public/js/main.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>나의 해야 할 일들</header>
+        <nav>
+            <input type="button" value="버튼이름" onclick="location.href='./public/todoForm.html'">
+        </nav>
+        <div class="table">
+            <ul>
+                <h1>TODO</h1>
+                <li class="card">
+                    <h3>자바스크립트 공부하기</h3>
+                    <span>등록날짜 : 2018. 07. 12. 유재찬 우선순위 1</span>
+                    <button onclick="move(this)">움직이는 버튼</button>
+                </li>
+            </ul>
+            <div class="doing">
+                <h1>DOING</h1>
+                <div class="card">
+                    <h3>자바 공부</h3>
+                    <span>등록날짜 : 2018. 07. 12. 유재찬 우선순위 2</span>
+                    <button onclick="move(this)">움직이는 버튼</button>
+                </div>
+            </div>
+            <div class="done">
+                <h1>DONE</h1>
+                <div class="card">
+                    <h3>스프링 공부하기</h3>
+                    <span>등록날짜 : 2018. 07. 10. 유재찬 우선순위 3</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

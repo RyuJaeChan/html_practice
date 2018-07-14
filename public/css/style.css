@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+:root {
+    --background-color: #ddd;
+    --index_block_color: #2196f3;
+    --element_block_color: #e3f2fd;
+    --btn_color: #2196f3;
+    --btn_text_color: #fff;
+    --back_btn_color: #fff;
+    --back_btn_text_color: #000;
+}
+/*
+@media all and (min-width:500px){
+    body{
+        background: black;
+    }
+}
+
+@media all and (min-width:768px){
+    body{
+        background: blue;
+    }
+}
+
+@media all and (min-width:960px){
+    body{
+        background: green;
+    }
+}
+*/
+
+body {
+    background-color: var(--background-color);
+}
+  
+.wrap {
+    width: calc(100% - 50px);
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    font-family: '맑은 고딕',
+          'Apple SD Gothic Neo',
+          sans-serif;
+}
+
+
+
+  
+  /*
+  * main.html
+  */
+  
+@media (max-width : 768px){
+    .table ul{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media all and (min-width : 768px){
+    .table ul{
+        float: left;
+        width: 30%;
+    }
+}
+
+h4 {
+    border: 1px solid gray;
+    width: 200px;
+    position: relative;
+    top: 60%;
+    transform: rotate(-50deg);
+}
+
+nav {
+    float: right;
+}
+
+.table{
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    clear: both;
+}
+
+.table ul{
+    height: inherit;
+    list-style: none;
+    padding: 0;
+}
+
+.table h1{
+    background: var(--index_block_color);
+    margin: 10px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.table li{
+    padding: 10px;
+    margin: 10px;
+    background: var(--element_block_color);
+    height: 100px;
+    border: 1px solid gray;
+}
+
+/*
+* todoForm.html
+*/
+
+.input_header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  
+  .input_con {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+  }
+  
+  
+  .input_form ul {
+    list-style: none;
+    display: block;
+    padding-left: 0px;
+  }
+  
+  .input_form li {
+    margin-left: 0px;
+  }
+  
+  .input_form span {
+    font-size: 17px;
+  }
+  
+  .input_form input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 17px;
+  }
+  
+  .input_area {
+    margin-bottom: 10px;
+    height: 250px;
+  }
+  
+  #todo {
+    width: 100%;
+  }
+  
+  .checkbox_ul {
+    margin-top: -10px;
+    padding-left: 0px;
+  }
+  
+  .checkbox_ul li {
+    float: left;
+    margin-right: 20px;
+    height: 40px;
+  }
+  
+  .checkbox_ul input {
+    position: relative;
+    top: 9px;
+  }
+  
+  .btn_area {
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+  }
+  
+  .btn_area button {
+    float: right;
+    margin-left: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    color: var(--btn_text_color);
+    background-color: var(--btn_color);
+    box-shadow: 2px 2px 1px gray;
+  }
+  
+  #back_btn {
+    float: left;
+    margin-left: 0px;
+    border: 2px solid gray;
+    color: var(--back_btn_text_color);
+    background-color: var(--back_btn_color);
+  }

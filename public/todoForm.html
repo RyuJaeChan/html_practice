@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>할 일 등록</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="input_header">
+    <h1>할일 등록</h1>
+  </header>
+  <section class="input_con">
+    <form class="input_form" action="./TodoAddServlet" method="post">
+      <div class="input_area">
+        <ul>
+          <li>
+            <span>어떤 일인가요?</span>
+          </li>
+          <li>
+            <input id="todo" type="text" maxlength="24" size="30px" name="title" placeholder=" 할 일을 작성해주세요." required>
+          </li>
+          <li>
+            <span>누가 할 일인가요?</span>
+          </li>
+          <li>
+            <input type="text" maxlength="32" name="name" placeholder=" 홍길동" required>
+          </li>
+          <li>
+            <span>우선순위를 선택하세요.</span>
+          </li>
+          <li>
+            <ul class="checkbox_ul">
+              <li><input type="radio" name="sequence" value="1" required>1순위</input>
+              </li>
+              <li><input type="radio" name="sequence" value="2">2순위</input>
+              </li>
+              <li><input type="radio" name="sequence" value="3">3순위</input>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="btn_area">
+        <button id="back_btn" type="button" name="back_btn" onclick="history.back()">< 이전</button>
+        <button type="submit" name="submit_btn">제출</button>
+        <button type="reset" name="reset_btn">내용 지우기</button>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
